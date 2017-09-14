@@ -10,7 +10,15 @@ defmodule FlatJSON.Mixfile do
       description: description(),
       package: package(),
       name: "FlatJSON",
-      source_url: "https://github.com/spirinvladimir/flat-json"
+      deps: deps(),
+      source_url: "https://github.com/flat-json/flat-json"
+    ]
+  end
+
+  defp deps do
+    [
+      {:ex_doc, "~> 0.11", only: :dev},
+      {:earmark, "~> 0.1", only: :dev}
     ]
   end
 
