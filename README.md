@@ -1,6 +1,8 @@
 # Flat JSON
 
-**Decode string to JSON for Elixir & ElixirScript**
+**Decode string with flat JSON to a Map**
+
+*Support Elixir & ElixirScript*
 
 ## Algorithm
 ```elixir

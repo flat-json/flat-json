@@ -24,10 +24,11 @@ defmodule FlatJSON.Mixfile do
 
   defp package() do
     [
+      name: "Flat JSON",
       files: ["lib", "mix.exs", "README.md"],
       maintainers: ["Vladimir Spirin"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/spirinvladimir/flat-json"}
+      links: %{"GitHub" => "https://github.com/flat-json/flat-json"}
     ]
   end
 end

@@ -1,7 +1,8 @@
 defmodule FlatJSON do
     def parse(s) do
         s
-        |> String.slice(1..-2)
+        |> String.replace_leading("{", "")
+        |> String.replace_trailing("}", "")
         |> String.replace("\"", "")
         |> String.split(",")
         |> Enum.map(fn (p) -> String.split(p, ":") end)
