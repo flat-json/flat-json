@@ -6,11 +6,12 @@
 ```elixir
 def parse(s) do
   s
-  |> String.slice(1..-2)
+  |> String.replace_leading("{", "")
+  |> String.replace_trailing("}", "")
   |> String.replace("\"", "")
   |> String.split(",")
   |> Enum.map(fn (p) -> String.split(p, ":") end)
-  |> Enum.reduce(%{}, fn (p, acc) -> Map.put(acc, List.first(p), List.last(p)) end)
+  |> Map.new(fn [key, value] -> {key, value} end)
 end
 ```
 
