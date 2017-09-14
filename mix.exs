@@ -19,7 +19,7 @@ defmodule FlatJSON.Mixfile do
   end
 
   defp description() do
-    "A few sentences (a paragraph) describing the project."
+    "Decode string with flat JSON to Map"
   end
 
   defp package() do
